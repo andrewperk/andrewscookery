@@ -53,6 +53,8 @@
 		7D2A11D72974FC1400151EBC /* AndrewsCookery */ = {
 			isa = PBXGroup;
 			children = (
+				7D2A1204297895A900151EBC /* ViewModels */,
+				7D2A12032978959400151EBC /* Views */,
 				7D2A11E6297514A700151EBC /* Models */,
 				7D2A11D82974FC1400151EBC /* AndrewsCookeryApp.swift */,
 				7D2A11DA2974FC1400151EBC /* ContentView.swift */,
@@ -76,6 +78,20 @@
 				7D2A11E7297514D600151EBC /* Recipe.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		7D2A12032978959400151EBC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		7D2A1204297895A900151EBC /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

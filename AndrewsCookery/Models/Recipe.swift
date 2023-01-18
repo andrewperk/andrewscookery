@@ -50,9 +50,11 @@ struct Ingredient {
         let formattedQuantity = String(format: "%g", quantity)
         switch unit {
             case .none:
+                // returns singular or plural unit name
                 let formattedName = quantity == 1 ? name : "\(name)s"
                 return "\(formattedQuantity) \(formattedName)"
             default:
+                // returns singular or plural
                 if quantity == 1 {
                     return "1 \(unit.singularName) \(name)"
                 } else {
@@ -70,6 +72,7 @@ struct Ingredient {
         case tsp = "Teaspoons"
         case none = "No units"
         
+        // Used to drop the last letter, which will be an S, making it singular
         var singularName: String {
             String(rawValue.dropLast())
         }
