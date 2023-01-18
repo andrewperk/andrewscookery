@@ -31,6 +31,15 @@ struct RecipeDetailView: View {
                         Text(ingredient.description)
                     }
                 }
+                Section(header: Text("Directions")) {
+                    ForEach(recipe.directions.indices, id: \.self) { index in
+                        let direction = recipe.directions[index]
+                        HStack {
+                            Text("\(index + 1). ").bold()
+                            Text("\(direction.isOptional ? "(Optional) " : "")" + "\(direction.description)")
+                        }
+                    }
+                }
             }
         }
         .navigationTitle(recipe.mainInformation.name)
