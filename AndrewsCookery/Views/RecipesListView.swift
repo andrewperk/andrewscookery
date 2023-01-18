@@ -11,14 +11,12 @@ struct RecipesListView: View {
     @StateObject var recipeData = RecipeData()
 
     var body: some View {
-        NavigationView {
-            List {
-                ForEach(recipes) { recipe in
-                    Text(recipe.mainInformation.name)
-                }
+        List {
+            ForEach(recipes) { recipe in
+                Text(recipe.mainInformation.name)
             }
-            .navigationTitle(navigationTitle)
         }
+        .navigationTitle(navigationTitle)
     }
 }
 
@@ -34,6 +32,8 @@ extension RecipesListView {
 
 struct RecipesListView_Previews: PreviewProvider {
     static var previews: some View {
-        RecipesListView()
+        NavigationView {
+            RecipesListView()
+        }
     }
 }

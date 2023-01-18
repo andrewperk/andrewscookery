@@ -13,6 +13,7 @@
 		7D2A11E02974FC1500151EBC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7D2A11DF2974FC1500151EBC /* Preview Assets.xcassets */; };
 		7D2A11E8297514D600151EBC /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D2A11E7297514D600151EBC /* Recipe.swift */; };
 		7D2A1206297897D700151EBC /* RecipeData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D2A1205297897D700151EBC /* RecipeData.swift */; };
+		7D2A12082978A53800151EBC /* RecipeDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D2A12072978A53800151EBC /* RecipeDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		7D2A11DF2974FC1500151EBC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		7D2A11E7297514D600151EBC /* Recipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recipe.swift; sourceTree = "<group>"; };
 		7D2A1205297897D700151EBC /* RecipeData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeData.swift; sourceTree = "<group>"; };
+		7D2A12072978A53800151EBC /* RecipeDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +87,7 @@
 			isa = PBXGroup;
 			children = (
 				7D2A11DA2974FC1400151EBC /* RecipesListView.swift */,
+				7D2A12072978A53800151EBC /* RecipeDetailView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -168,6 +171,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7D2A11E8297514D600151EBC /* Recipe.swift in Sources */,
+				7D2A12082978A53800151EBC /* RecipeDetailView.swift in Sources */,
 				7D2A1206297897D700151EBC /* RecipeData.swift in Sources */,
 				7D2A11DB2974FC1400151EBC /* RecipesListView.swift in Sources */,
 				7D2A11D92974FC1400151EBC /* AndrewsCookeryApp.swift in Sources */,
