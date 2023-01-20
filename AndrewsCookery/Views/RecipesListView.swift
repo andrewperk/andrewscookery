@@ -8,39 +8,39 @@
 import SwiftUI
 
 struct RecipesListView: View {
-    @StateObject var recipeData = RecipeData()
+    @EnvironmentObject private var recipeData: RecipeData
+    let category: MainInformation.Category
     
     private let listBackgroundColor = AppColor.background
     private let listTextColor = AppColor.foreground
 
     var body: some View {
-        NavigationView {
-            List {
-                ForEach(recipes) { recipe in
-                    NavigationLink(recipe.mainInformation.name, destination: RecipeDetailView(recipe: recipe))
-                }
-                .listRowBackground(listBackgroundColor)
-                .foregroundColor(listTextColor)
+        List {
+            ForEach(recipes) { recipe in
+                NavigationLink(recipe.mainInformation.name, destination: RecipeDetailView(recipe: recipe))
             }
-            .navigationTitle(navigationTitle)
+            .listRowBackground(listBackgroundColor)
+            .foregroundColor(listTextColor)
         }
+        .navigationTitle(navigationTitle)
     }
 }
 
 extension RecipesListView {
     var recipes: [Recipe] {
-        recipeData.recipes
+        recipeData.recipes(for: category)
     }
     
     var navigationTitle: String {
-        "All Recipes"
+        "\(category.rawValue) Recipes"
     }
 }
 
 struct RecipesListView_Previews: PreviewProvider {
     static var previews: some View {
         NavigationView {
-            RecipesListView()
+            RecipesListView(category: .dessert)
+                .environmentObject(RecipeData())
         }
     }
 }

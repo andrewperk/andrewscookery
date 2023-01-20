@@ -15,6 +15,7 @@
 		7D2A1206297897D700151EBC /* RecipeData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D2A1205297897D700151EBC /* RecipeData.swift */; };
 		7D2A12082978A53800151EBC /* RecipeDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D2A12072978A53800151EBC /* RecipeDetailView.swift */; };
 		7D2A120A2978B14000151EBC /* AppColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D2A12092978B14000151EBC /* AppColor.swift */; };
+		7D2A1226297B2E6100151EBC /* RecipeCategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D2A1225297B2E6100151EBC /* RecipeCategoryView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		7D2A1205297897D700151EBC /* RecipeData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeData.swift; sourceTree = "<group>"; };
 		7D2A12072978A53800151EBC /* RecipeDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeDetailView.swift; sourceTree = "<group>"; };
 		7D2A12092978B14000151EBC /* AppColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColor.swift; sourceTree = "<group>"; };
+		7D2A1225297B2E6100151EBC /* RecipeCategoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeCategoryView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +92,7 @@
 			children = (
 				7D2A11DA2974FC1400151EBC /* RecipesListView.swift */,
 				7D2A12072978A53800151EBC /* RecipeDetailView.swift */,
+				7D2A1225297B2E6100151EBC /* RecipeCategoryView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -174,6 +177,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7D2A11E8297514D600151EBC /* Recipe.swift in Sources */,
+				7D2A1226297B2E6100151EBC /* RecipeCategoryView.swift in Sources */,
 				7D2A12082978A53800151EBC /* RecipeDetailView.swift in Sources */,
 				7D2A1206297897D700151EBC /* RecipeData.swift in Sources */,
 				7D2A11DB2974FC1400151EBC /* RecipesListView.swift in Sources */,
